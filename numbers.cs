@@ -1,17 +1,15 @@
-﻿Console.WriteLine("Please, input integer number");
+Console.WriteLine("Please, input integer number");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Please, input the place nuber of it, numeric value you would like to now");
 int pos = Convert.ToInt32(Console.ReadLine());
 int[] num = new int[32];
 int index = 0;
 int numozoid = 0;
-int cuttednum = 1;
 int tens = 1;
-while (cuttednum > 0)
+while (number > numozoid)
 {
     index++;
-    cuttednum = number - numozoid;
-    num[index] = cuttednum / tens % 10;
+    num[index] = (number - numozoid) / tens % 10;
     numozoid = numozoid + num[index] * (tens);
     tens = tens * 10;
 }
