@@ -10,7 +10,7 @@ while (number > numozoid)
 {
     index++;
     num[index] = (number - numozoid) / tens % 10;
-    numozoid = numozoid + num[index] * (tens);
+    numozoid = numozoid + num[index] * tens;
     tens = tens * 10;
 }
 while (pos>index-1)
