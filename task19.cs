@@ -6,8 +6,6 @@ int marker = 0;
 
 int halflength = NumDataLength(number) / 2;
 int length = NumDataLength(number);
-Console.WriteLine($"length: {NumDataLength(number)}");
-Console.WriteLine($"halflength: {halflength}");
 int ind = 0;
 while (ind < halflength)
 {
